@@ -122,11 +122,25 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 45%;
+}
+
+.header-divider {
+  width: 100%;
+}
+
+footer .content wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin 50px 0;
 }
 
 footer .social-icons {
@@ -175,6 +189,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 55%;
+}
+
 /* Reviews */
 
 .reviews {
@@ -183,6 +201,9 @@ aside {
   flex-flow: row wrap;
 }
 
+.reviews h3 {
+  width: 48%
+}
 
 /* ==========================================================================
    About Page
