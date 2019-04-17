@@ -106,7 +106,7 @@ textarea {
      width: 90%;
      margin: 50px 0;
    }
-   
+
 /* ------------- Base Header - Footer Styles -----------*/
 
 header, footer {
@@ -368,17 +368,58 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+     .content-wrapper {
+       max-width: 640px;
+       margin-left: 100px 0;
+     }
 
+     header {
+       justify-content:
+     }
+
+     header .content-wrapper {
+       display: flex;
+       justify-content: flex-end;
+       flex-wrap: nowrap;
+     }
+
+     header nav ul {
+       justify-content:
+     }
+
+
+     aside .content-wrapper {
+       display: flex;
+       flex-wrap: nowrap;
+       justify-content: space-between;
+       margin: 50px 0;
+     }
+
+     aside .form-description {
+       width: 31%;
+     }
+
+     .features article {
+       width: 83%;
+     }
+
+     .reviews article {
+       display: flex;
+       justify-content: flex-end;
+     }
+
+     footer .footer-content {
+       display: flex;
+       justify-content: space-between;
+     }
+
+   }
+
+   @media only screen and (min-width: 1200px) {
+     /* Desktop styles */
+   }
 
 /* ==========================================================================
    Print styles.
