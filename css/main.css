@@ -263,6 +263,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.contact-content p {
+  margin: 0;
+}
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -275,10 +279,19 @@ aside {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
  /* ==========================================================================
@@ -368,6 +381,9 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
+
+/*** Homepage ***/
+
    @media only screen and (min-width: 768px) {
 
      .content-wrapper {
@@ -410,12 +426,65 @@ aside {
        justify-content: flex-end;
      }
 
-     footer .footer-content {
+     footer .content-wrapper {
+       margin: 100px 0;
+       width:
+     }
+
+     .footer-content {
        display: flex;
        justify-content: space-between;
      }
 
+     footer .contact {
+       margin-bottom: 0;
+     }
+
+     footer .copyright {
+       width:
+     }
+
+   /*** About ***/
+
+     .mission-content {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+     }
+
+     .mission-content p {
+       width: 45%;
+       padding: 10px;
+     }
+
+     .contact-section, .content-wrapper h2 {
+       width: 60%;
+       display: flex;
+     }
+
+     .contact-content {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+     }
+
+     /*** FAQ ***/
+
+     .faq .content-wrapper {
+       justify-content: space-between;
+     }
+
+     .faq-content {
+       flex-basis: 40%;
+     }
+
+     .faq h2 {
+       width: 100%;
+     }
+
    }
+
 
    @media only screen and (min-width: 1200px) {
      /* Desktop styles */
